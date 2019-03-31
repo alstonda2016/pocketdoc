@@ -20,6 +20,17 @@ class tabMyProfileViewController: UIViewController {
         
     }
     
+    @IBAction func btnCallHospital(_ sender: Any) {
+        guard let url = URL(string: "tel://\(2175558445)") else {
+            return //be safe
+        }
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

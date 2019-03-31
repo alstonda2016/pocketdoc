@@ -11,7 +11,7 @@ class calendarObject {
     var medicineID:String = ""
     var calendarDate:String = ""
     var medicineName:String = ""
-    
+    var directions:String = ""
     
     
     
@@ -20,11 +20,12 @@ class calendarObject {
     //Normal Post
     init( medicineID:String,
           calendarDate:String,
-          medicineName:String ) {
+          medicineName:String, directions:String ) {
         self.medicineID = medicineID
         self.calendarDate = calendarDate
         self.medicineName = medicineName
-        
+        self.directions = directions
+
     }
     
     
