@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D9746B1226245CC009A551E /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9746B0226245CC009A551E /* settingsViewController.swift */; };
+		5D9746B722624609009A551E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9746B222624608009A551E /* DetailViewController.swift */; };
+		5D9746B822624609009A551E /* SearchOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9746B322624609009A551E /* SearchOption.swift */; };
+		5D9746B922624609009A551E /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9746B422624609009A551E /* SearchFooter.swift */; };
+		5D9746BA22624609009A551E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9746B522624609009A551E /* SearchViewController.swift */; };
 		63460873224AC9E800CE97FA /* tabHomeCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63460872224AC9E800CE97FA /* tabHomeCalendarViewController.swift */; };
 		63460875224ACAC300CE97FA /* tabHomeCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63460874224ACAC300CE97FA /* tabHomeCalendarCollectionViewCell.swift */; };
 		63460877224ACC2200CE97FA /* calendarObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63460876224ACC2200CE97FA /* calendarObject.swift */; };
 		63460879224ACEE200CE97FA /* tabSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63460878224ACEE200CE97FA /* tabSearchViewController.swift */; };
 		6346087B224ACFA100CE97FA /* tabMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346087A224ACFA100CE97FA /* tabMyProfileViewController.swift */; };
-		6346087D224AD26C00CE97FA /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346087C224AD26C00CE97FA /* settingsViewController.swift */; };
 		6346087F224AD27700CE97FA /* addMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346087E224AD27700CE97FA /* addMedicineViewController.swift */; };
 		638E9983224A84050032D043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9982224A84050032D043 /* AppDelegate.swift */; };
 		638E9985224A84050032D043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9984224A84050032D043 /* ViewController.swift */; };
@@ -42,12 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D9746B0226245CC009A551E /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		5D9746B222624608009A551E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5D9746B322624609009A551E /* SearchOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchOption.swift; sourceTree = "<group>"; };
+		5D9746B422624609009A551E /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		5D9746B522624609009A551E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		63460872224AC9E800CE97FA /* tabHomeCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabHomeCalendarViewController.swift; sourceTree = "<group>"; };
 		63460874224ACAC300CE97FA /* tabHomeCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabHomeCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		63460876224ACC2200CE97FA /* calendarObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarObject.swift; sourceTree = "<group>"; };
 		63460878224ACEE200CE97FA /* tabSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabSearchViewController.swift; sourceTree = "<group>"; };
 		6346087A224ACFA100CE97FA /* tabMyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabMyProfileViewController.swift; sourceTree = "<group>"; };
-		6346087C224AD26C00CE97FA /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		6346087E224AD27700CE97FA /* addMedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMedicineViewController.swift; sourceTree = "<group>"; };
 		638E997F224A84050032D043 /* pocketDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638E9982224A84050032D043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +125,11 @@
 				638E9984224A84050032D043 /* ViewController.swift */,
 				638E9986224A84050032D043 /* Main.storyboard */,
 				6346087A224ACFA100CE97FA /* tabMyProfileViewController.swift */,
-				6346087C224AD26C00CE97FA /* settingsViewController.swift */,
+				5D9746B322624609009A551E /* SearchOption.swift */,
+				5D9746B222624608009A551E /* DetailViewController.swift */,
+				5D9746B522624609009A551E /* SearchViewController.swift */,
+				5D9746B422624609009A551E /* SearchFooter.swift */,
+				5D9746B0226245CC009A551E /* settingsViewController.swift */,
 				6346087E224AD27700CE97FA /* addMedicineViewController.swift */,
 				63460874224ACAC300CE97FA /* tabHomeCalendarCollectionViewCell.swift */,
 				63460878224ACEE200CE97FA /* tabSearchViewController.swift */,
@@ -280,16 +292,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9746B722624609009A551E /* DetailViewController.swift in Sources */,
+				5D9746B822624609009A551E /* SearchOption.swift in Sources */,
 				638E9985224A84050032D043 /* ViewController.swift in Sources */,
+				5D9746B922624609009A551E /* SearchFooter.swift in Sources */,
 				638E9983224A84050032D043 /* AppDelegate.swift in Sources */,
 				63460873224AC9E800CE97FA /* tabHomeCalendarViewController.swift in Sources */,
 				63460877224ACC2200CE97FA /* calendarObject.swift in Sources */,
 				63BEF50122516DD200AE3AC7 /* viewDetailsViewController.swift in Sources */,
+				5D9746B1226245CC009A551E /* settingsViewController.swift in Sources */,
 				6346087B224ACFA100CE97FA /* tabMyProfileViewController.swift in Sources */,
 				63460879224ACEE200CE97FA /* tabSearchViewController.swift in Sources */,
 				63460875224ACAC300CE97FA /* tabHomeCalendarCollectionViewCell.swift in Sources */,
+				5D9746BA22624609009A551E /* SearchViewController.swift in Sources */,
 				6346087F224AD27700CE97FA /* addMedicineViewController.swift in Sources */,
-				6346087D224AD26C00CE97FA /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
