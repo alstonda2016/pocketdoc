@@ -467,6 +467,9 @@
                                         <rect key="frame" x="149.5" y="671" width="75" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="doAction:" destination="1Xu-1A-wJU" eventType="touchUpInside" id="r7E-0w-XaA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -488,6 +491,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Chocolate" largeTitleDisplayMode="always" id="5PT-Va-C2i"/>
                     <connections>
+                        <outlet property="actionBtn" destination="W3k-AF-okW" id="dvu-AE-Zmq"/>
                         <outlet property="candyImageView" destination="9YE-03-cJ3" id="Q7a-4Y-atf"/>
                         <outlet property="detailDescription" destination="Kjw-Yf-rwv" id="P76-7N-Ji9"/>
                         <outlet property="detailDescriptionLabel" destination="IYV-vf-KYl" id="x5D-aF-dF3"/>
