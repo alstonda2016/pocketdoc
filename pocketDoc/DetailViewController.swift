@@ -40,7 +40,7 @@ class DetailViewController: UIViewController {
         detailDescriptionLabel.font = UIFont(name: "Verdana-Bold", size: 20)
         detailDescriptionLabel.text = detailCandy.name
         candyImageView.image = UIImage(named: detailCandy.name)
-        title = detailCandy.category
+        title = detailCandy.category.toString()
         detailDescription.isScrollEnabled = false
         detailDescription.font = UIFont(name: "Verdana", size: 16)
         detailDescription.text = detailCandy.description

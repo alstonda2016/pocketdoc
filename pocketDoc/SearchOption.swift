@@ -22,8 +22,28 @@
 
 import Foundation
 
+enum Category {
+    case Hospital
+    case Pharmacy
+    case Medicine
+    case Symptom
+    
+    func toString() -> String {
+        switch self {
+        case .Hospital:
+            return "Hospital"
+        case .Pharmacy:
+            return "Pharmacy"
+        case .Medicine:
+            return "Medicine"
+        case .Symptom:
+            return "Symptom"
+        }
+    }
+}
+
 struct SearchOption {
-    let category : String
+    let category : Category
     let name : String
     let description : String
 }
