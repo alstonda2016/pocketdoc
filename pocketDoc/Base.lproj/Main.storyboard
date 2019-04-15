@@ -429,8 +429,7 @@
         <!--Detail-->
         <scene sceneID="Pe9-pW-bqH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yoO-jo-XM8" sceneMemberID="firstResponder"/>
-                <viewController title="Detail" id="1Xu-1A-wJU" customClass="DetailViewController" customModule="CandySearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="1Xu-1A-wJU" customClass="DetailViewController" customModule="pocketDoc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bz5-UJ-Grw"/>
                         <viewControllerLayoutGuide type="bottom" id="nbJ-GM-YkD"/>
@@ -453,8 +452,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="9YE-03-cJ3">
-                                        <rect key="frame" x="0.0" y="34" width="374" height="681"/>
+                                        <rect key="frame" x="0.0" y="34" width="374" height="306"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="306" id="dZD-y9-gb4"/>
+                                        </constraints>
                                     </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kjw-Yf-rwv">
+                                        <rect key="frame" x="3" y="340" width="368" height="375"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="9YE-03-cJ3" firstAttribute="leading" secondItem="6Sf-Fo-yF9" secondAttribute="leading" id="5HY-Da-bjz"/>
@@ -476,16 +484,18 @@
                     <navigationItem key="navigationItem" title="Chocolate" largeTitleDisplayMode="always" id="5PT-Va-C2i"/>
                     <connections>
                         <outlet property="candyImageView" destination="9YE-03-cJ3" id="Q7a-4Y-atf"/>
+                        <outlet property="detailDescription" destination="Kjw-Yf-rwv" id="P76-7N-Ji9"/>
                         <outlet property="detailDescriptionLabel" destination="IYV-vf-KYl" id="x5D-aF-dF3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yoO-jo-XM8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="-200"/>
+            <point key="canvasLocation" x="2957.971014492754" y="-200.22321428571428"/>
         </scene>
         <!--Master-->
         <scene sceneID="l2D-xe-09u">
             <objects>
-                <viewController title="Master" id="8gE-1R-fA3" customClass="SearchViewController" customModule="CandySearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Master" id="8gE-1R-fA3" customClass="SearchViewController" customModule="pocketDoc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D2X-Rt-sV8"/>
                         <viewControllerLayoutGuide type="bottom" id="xi8-ml-U6q"/>
@@ -531,7 +541,7 @@
                                     <outlet property="delegate" destination="8gE-1R-fA3" id="9ZG-jq-zeR"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-OY-Pr5" customClass="SearchFooter" customModule="CandySearch" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-OY-Pr5" customClass="SearchFooter" customModule="pocketDoc" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="769" width="414" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

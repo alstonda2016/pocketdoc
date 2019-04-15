@@ -26,7 +26,8 @@ class DetailViewController: UIViewController {
   
   @IBOutlet weak var detailDescriptionLabel: UILabel!
   @IBOutlet weak var candyImageView: UIImageView!
-  
+  @IBOutlet weak var detailDescription: UITextView!
+    
   var detailCandy: SearchOption? {
     didSet {
       configureView()
@@ -35,10 +36,14 @@ class DetailViewController: UIViewController {
   
   func configureView() {
     if let detailCandy = detailCandy {
-      if let detailDescriptionLabel = detailDescriptionLabel, let candyImageView = candyImageView {
+      if let detailDescriptionLabel = detailDescriptionLabel, let candyImageView = candyImageView, let detailDescription = detailDescription {
+        detailDescriptionLabel.font = UIFont(name: "Verdana-Bold", size: 20)
         detailDescriptionLabel.text = detailCandy.name
         candyImageView.image = UIImage(named: detailCandy.name)
         title = detailCandy.category
+        detailDescription.isScrollEnabled = false
+        detailDescription.font = UIFont(name: "Verdana", size: 16)
+        detailDescription.text = detailCandy.description
       }
     }
   }
