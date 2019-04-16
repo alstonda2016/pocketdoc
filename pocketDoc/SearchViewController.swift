@@ -40,7 +40,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     // Setup the Search Controller
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
-    searchController.searchBar.placeholder = "Search Candies"
+    searchController.searchBar.placeholder = "How can PocDoc help you?"
     navigationItem.searchController = searchController
     definesPresentationContext = true
     
